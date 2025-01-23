@@ -2,6 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import split, to_date, length, when, current_date, datediff, year, row_number
 from pyspark.sql.window import Window
 
+
 # Initialize Spark session
 spark = SparkSession.builder.appName("CustomerDataProcessing").getOrCreate()
 
